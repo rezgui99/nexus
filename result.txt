@@ -1,0 +1,1462 @@
+﻿python : 2026-07-20 17:49:59,643 [INFO] \U0001f680 DÚmarrage pipeline NER CV ù Bloc 2
+Au caractère Ligne:1 : 1
++ python -c "import traceback; exec(open('bloc2_llm_ner/05_ner_cv_llm.p ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-07-20 17:4...NER CV ù Bloc 2:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-07-20 17:49:59,646 [DEBUG] {"message": "Starting topology monitoring", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}}
+2026-07-20 17:49:59,646 [DEBUG] {"message": "Topology description changed", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "previousDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, 
+topology_type: Unknown, servers: []>", "newDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, 
+topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>"}
+2026-07-20 17:49:59,646 [DEBUG] {"message": "Starting server monitoring", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:49:59,646 [DEBUG] {"message": "Connection pool created", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:49:59,654 [DEBUG] {"message": "Server heartbeat started", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverHost": "localhost", "serverPort": 27017, "awaited": 
+false}
+2026-07-20 17:49:59,655 [DEBUG] {"message": "Server heartbeat succeeded", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": false, "durationMS": 0.0, "reply": "{\"helloOk\": true, \"ismaster\": true, 
+\"topologyVersion\": {\"processId\": {\"$oid\": \"6a5e0d6f99a64bb43d97b060\"}}, \"maxBsonObjectSize\": 16777216, 
+\"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": 
+\"2026-07-20T16:49:59.655Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 250, \"maxWireVersion\": 27, 
+\"ok\": 1.0}"}
+2026-07-20 17:49:59,655 [DEBUG] {"message": "Connection pool ready", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:49:59,655 [DEBUG] {"message": "Topology description changed", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "previousDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, 
+topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>", 
+"newDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: 
+[<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>"}
+2026-07-20 17:49:59,656 [DEBUG] {"message": "Server heartbeat started", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true}
+2026-07-20 17:50:05,176 [INFO] \u2705 LLM initialisÚ ù groq / llama-3.3-70b-versatile
+2026-07-20 17:50:05,356 [INFO] \u2705 Table cv_structures prÛte
+2026-07-20 17:50:05,357 [DEBUG] {"message": "Server selection started", "selector": "Primary()", "operation": 
+"find", "topologyDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: 
+[<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}}
+2026-07-20 17:50:05,357 [DEBUG] {"message": "Server selection succeeded", "selector": "Primary()", "operation": 
+"find", "topologyDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: 
+[<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:05,357 [DEBUG] {"message": "Connection checkout started", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:05,358 [DEBUG] {"message": "Connection created", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1}
+2026-07-20 17:50:05,360 [DEBUG] {"message": "Connection ready", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 0.0}
+2026-07-20 17:50:05,360 [DEBUG] {"message": "Connection checked out", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 
+0.0}
+2026-07-20 17:50:05,360 [DEBUG] {"message": "Command started", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"command": "{\"find\": \"raw_cv\", \"filter\": {\"statut_traitement\": \"raw\"}, \"limit\": 10, \"lsid\": {\"id\": 
+{\"$binary\": {\"base64\": \"dCAw9Z3CQUiKaO3qXjum5g==\", \"subType\": \"04\"}}}, \"$db\": \"nexus_emploi\"}", 
+"commandName": "find", "databaseName": "nexus_emploi", "requestId": 18467, "operationId": 18467, 
+"driverConnectionId": 1, "serverConnectionId": 252, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:05,363 [DEBUG] {"message": "Command succeeded", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"durationMS": 3.367, "reply": "{\"cursor\": {\"firstBatch\": [{\"_id\": {\"$oid\": \"69fc4ac420645bb85e8d111c\"}, 
+\"content_hash\": \"23146148b472d480319e078f1893f2c9ca29fce708306c78ed2c8dd87b6bd090\", \"candidat_id\": 
+\"23146148b472d480\", \"fichier_format\": \"pdf\", \"fichier_nom\": \"tmpvk7wl6sw.pdf\", \"nb_caracteres\": 4360, 
+\"nb_pages\": 2, \"parsed_at\": \"2026-05-07T08:18:12.231168+00:00\", \"parser_utilise\": \"pypdf\", 
+\"pipeline_version\": \"1.0.0\", \"statut_traitement\": \"raw\", \"texte_brut\": \"--- Page 1 ---\nData 
+Analyst\nMohamed Aziz Rezgui\narezgui1999@gmail.com +33758284094 6 Avenue Georges Pompidou, 
+Puteaux,92800\nPr\u00e9sentation \u00c9tudiant en MSc Data Management, sp\u00e9cialis\u00e9 dans la valorisation de 
+donn\u00e9es pour\nsoutenir la d\u00e9cision strat\u00e9gique. Dot\u00e9 d'une double comp\u00e9tence en 
+ing\u00e9nierie informatique\net statistiques, mon pro\ufb01l couvre l\u2019int\u00e9gralit\u00e9 du cycle de la 
+donn\u00e9e : de l'extraction SQL au\ntraitement Python, jusqu'\u00e0 la visualisation. Pr\u00eat \u00e0 
+transformer...", "commandName": "find", "databaseName": "nexus_emploi", "requestId": 18467, "operationId": 18467, 
+"driverConnectionId": 1, "serverConnectionId": 252, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:05,365 [DEBUG] {"message": "Connection checked in", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1}
+2026-07-20 17:50:05,365 [INFO] \U0001f4e5 10 CV bruts Ó traiter
+2026-07-20 17:50:05,365 [INFO] \U0001f50d Traitement : tmpvk7wl6sw.pdf
+2026-07-20 17:50:05,397 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-ce03031a-7bbf-40b0-9c2d-1abe9b57b4f5', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nData Analyst\nMohamed Aziz Rezgui\narezgui1999@gmail.com +33758284094 6 Avenue 
+Georges Pompidou, Puteaux,92800\nPrÚsentation ╔tudiant en MSc Data Management, spÚcialisÚ dans la valorisation de 
+donnÚes pour\nsoutenir la dÚcision stratÚgique. DotÚ d\'une double compÚtence en ingÚnierie informatique\net 
+statistiques, mon pro\ufb01l couvre lÆintÚgralitÚ du cycle de la donnÚe : de l\'extraction SQL au\ntraitement 
+Python, jusqu\'Ó la visualisation. PrÛt Ó transformer ces \ufb02ux en leviers de\nperformance pour les Úquipes 
+mÚtiers via l\'analyse prÚdictive et le reporting intelligent.\nExpÚriences Abshore Tunis,Tunisie\nStage de \ufb01n 
+dÆÚtudes Mars 2025 - ao¹t 2025\nAbshore | Stagiaire Data Analyst (Stage de \ufb01n d\'Útudes)\nAnalyse prÚdictive 
+et scoring de pro\ufb01ls : Conception d\'un moteur de recommandation\nbasÚ sur l\'analyse de donnÚes RH (GPEC) 
+pour identi\ufb01er et classer les pro\ufb01ls les plus\nadÚquats pour chaque poste.\nModÚlisation et Gap Analysis 
+: CrÚation de matrices de compÚtences dynamiques pour\nidenti\ufb01er les Úcarts de performance et optimiser le 
+matching entre les candidats et les\nbesoins mÚtier de l\'entreprise.\nEnvironnement : Python | FastAPI | 
+PostgreSQL | Machine Learning | Scikit-learn |\nAngular\nArabSoft Tunis, Tunisie\nStagiaire De juin 2024 Ó ao¹t 
+2024\nArabSoft | Stagiaire Data & DÚveloppement\nModÚlisation et optimisation de base de donnÚes : Conception 
+d\'une base de donnÚes\nMySQL permettant d\'assurer l\'intÚgritÚ et la traþabilitÚ des \ufb02ux comptables 
+(comptes,\nfactures, Úcritures).\nFiabilisation du reporting \ufb01nancier : CrÚation d\'une interface Web 
+permettant\nl\'automatisation des processus de saisie pour rÚduire les erreurs humaines et garantir 
+la\n\ufb01abilitÚ de l\'historique transactionnel.\nEnvironnement : Symfony | PHP | MySQL | Gestion de bases de 
+donnÚes relationnelles.\nProjets Salle de MarchÚ | Analyse de \ufb02ux \ufb01nanciers et dÚtection 
+d\'anomalies\nTraitement de sÚries temporelles : Analyse et af\ufb01chage dynamique des \ufb02ux \ufb01nanciers\nen 
+temps rÚel pour le suivi des cours, des ordres et des transactions.\nIntelligence Arti\ufb01cielle appliquÚe : 
+ImplÚmentation de modÞles de Machine Learning\npour identi\ufb01er des comportements de marchÚ atypiques 
+(anomalies).\nEnvironnement : Python | Scikit-learn | Spring Boot | PostgreSQL | Angular.\n\n--- Page 2 
+---\nMicroBanque | Analyse comportementale et sÚcurisation des \ufb02ux\nAnalyse de donnÚes bancaires : ╔tude de 
+l\'historique des transactions pour optimiser\nl\'expÚrience utilisateur et \ufb01abiliser les processus de 
+dÚcision liÚs aux prÛts.\nVisualisation fonctionnelle : DÚveloppement d\'interfaces de consultation permettant\nune 
+lecture claire et intuitive des soldes et des historiques \ufb01nanciers.\nEnvironnement : Spring Boot | Angular | 
+MySQL | Analyse de donnÚes.\nAnalyse de Performance | Vente en Gros de Jouets Miniatures\nPilotage international : 
+Analyse des \ufb02ux de vente pour une entreprise spÚcialisÚe en\nmaquettes et modÞles de jouets rÚduits, rÚpartie 
+sur 7 bureaux mondiaux.\nDashboarding 360░ : Conception dÆun outil dÆaide Ó la dÚcision sous Power BI\ncentralisant 
+les indicateurs clÚs (KPIs) des p¶les Ventes, Finances, Logistique et RH.\nAnalyse de saisonnalitÚ : CrÚation de 
+mesures calculÚes (DAX) pour le suivi de\nl\'Úvolution du chiffre d\'affaires (N-1, M-1) et l\'identi\ufb01cation 
+des tendances de marchÚ\npar gamme de produits.\nOptimisation logistique et RH : ImplÚmentation d\'un indicateur de 
+prÚvision de rupture\nde stock et analyse de la productivitÚ des 23 collaborateurs pour formuler 
+des\nrecommandations sur la rÚpartition gÚographique des stocks.\nOptimisation stratÚgique : Mise en place d\'un 
+indicateur de prÚvision de rupture de\nstock et audit de la qualitÚ des donnÚes (RGPD et \ufb01abilitÚ des adresses 
+mails).\nEnvironnement : Power BI | MySQL | DAX | Data Storytelling | Business Intelligence.\nEducation Ecole 
+supÚrieure privÚe d\'ingÚnierie et de technologie\n(ESPRIT)\nIngÚnierie en Informatique\nDe sept. 2020 Ó juillet 
+2025\nAivancity Master of Science Data Management\nParis ò octobre 2025 - Ó prÚsent\nCompÚtences Outils data : 
+Python (Pandas, NumPy, Scikit-learn), Power BI, Excel\nBases de DonnÚes : SQL\nDÚveloppement & Frameworks : Spring 
+Boot, Angular, Node.js, Symfony, Java,\nHTML/CSS\nSoftskills: Apprentissage rapide, esprit dÆÚquipe, curiositÚ 
+intellectuelle, rÚsolution de\nproblÞmes.\nLangues Franþais Anglais\nCentre d\'intÚrÛt voyage football musique\nB i 
+l i n g u e\nP r o f e s s i o n n e l'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 
+'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:05,415 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:05,417 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None 
+socket_options=None
+2026-07-20 17:50:05,481 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 
+0x000001BE90E32A40>
+2026-07-20 17:50:05,481 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x000001BE907AF3C0> 
+server_hostname='api.groq.com' timeout=None
+2026-07-20 17:50:05,525 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 
+0x000001BE90E32890>
+2026-07-20 17:50:05,526 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,526 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:05,526 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,526 [DEBUG] send_request_body.complete
+2026-07-20 17:50:05,526 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,613 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:06 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'385'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'788'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'953'), (b'x-ratelimit-remaining-tokens', b'12000'), 
+(b'x-ratelimit-reset-requests', b'1h7m40.8s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', 
+b'req_01ky06ym6qf4789shm1pvvwrcz'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'set-cookie', b'__cf_bm=65419YGS8bPPUU_aK8q2dws_xPNLYbzTLBeZVIahC30-1784566206.6477783-1.0.1.1-Xhs.EW
+j37gmQ9gZS58RKXojwpjncctTr0sq3JskyVdQdFPGIrHW7NKbtdAdBvMZt2C_1gRmq.iszFv0_WZVt9uRC7H.ug1ldM_FAailtjEzqGYAkkaDzKRasQv
+E1Ko5U; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Mon, 20 Jul 2026 17:20:06 GMT'), 
+(b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e376878802cac8-MRS'), (b'alt-svc', 
+b'h3=":443"; ma=86400')])
+2026-07-20 17:50:05,614 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:05,614 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,614 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:05,615 [DEBUG] response_closed.started
+2026-07-20 17:50:05,615 [DEBUG] response_closed.complete
+2026-07-20 17:50:05,615 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:06 GMT', 'content-type': 'application/json', 'content-length': 
+'385', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '788', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '953', 
+'x-ratelimit-remaining-tokens': '12000', 'x-ratelimit-reset-requests': '1h7m40.8s', 'x-ratelimit-reset-tokens': 
+'1ms', 'x-request-id': 'req_01ky06ym6qf4789shm1pvvwrcz', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'set-cookie': '__cf_bm=65419YGS8bPPUU_aK8q2dws_xPNLYbzTLBeZVIahC30-1784566206.6477783-
+1.0.1.1-Xhs.EWj37gmQ9gZS58RKXojwpjncctTr0sq3JskyVdQdFPGIrHW7NKbtdAdBvMZt2C_1gRmq.iszFv0_WZVt9uRC7H.ug1ldM_FAailtjEzq
+GYAkkaDzKRasQvE1Ko5U; HttpOnly; SameSite=None; Secure; Path=/; Domain=groq.com; Expires=Mon, 20 Jul 2026 17:20:06 
+GMT', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e376878802cac8-MRS', 'alt-svc': 'h3=":443"; 
+ma=86400'})
+2026-07-20 17:50:05,615 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:05,616 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:05,616 [DEBUG] Re-raising status error
+2026-07-20 17:50:05,617 [ERROR] \u274c Erreur LLM pour CV tmpvk7wl6sw.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99393, Requested 1518. Please try again in 13m7.104s. 
+Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:05,618 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 99393, Requested 1518. Please try again in 13m7.104s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:05,618 [INFO] \U0001f50d Traitement : tmpsh5puxyk.pdf
+2026-07-20 17:50:05,619 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-e3ed4673-115f-400c-879b-f135685a36ce', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nProfiles\nGhazi Bouzid\nghazi300\nSkills\nTechnologies Web\nAdvanced\nHTML, CSS, 
+JavaScript, TypeScript, PHP,\nJava, 
+Python\nFramework/BibliothÞques\nFrontend-Web\n\ue1ec\ue1ec\ue1ec\ue1ec\ue1ec\nReact, Angular, NextJs, 
+Bootstrap,\nTailwindCSS, JQuery\nFramework Backend-Web\n\ue1ec\ue1ec\ue1ec\ue1ec\ue1ec\nDjango, Laravel, NestJs, 
+ExpressJS, .NET,\nSpring\nBases de donnÚes\n\ue1ec\ue1ec\ue1ec\ue1ec\ue1ec\nMySQL, 
+MongoDB\nOutils\n\ue1ec\ue1ec\ue1ec\ue1ec\ue1ec\nGit, Jenkins, Jira, XRAY, Docker,\nSonarqube, Nexus\nGhazi 
+BOUZID\nFutur IngÚnieur Informatique\n\ue316Ariana, Tunisia \ue3b8+216 93 826 243 
+\ue0acghazi.bouzid@esprit.tn\nRÚsumÚ\n╔tudiant en ingÚnierie informatique Ó ESPRIT Tunis, spÚcialisÚ 
+en\nTechnologies Web et Internet. Enthousiaste et motivÚ, expÚrimentÚ\ndans une variÚtÚ de langages de 
+programmation et de frameworks, avec\nune solide fondation en dÚveloppement front-end et back-end.\nCompÚtent en 
+pratiques DevOps et outils, y compris les pipelines CI/CD.\nJ\'ai Úgalement eu l\'opportunitÚ de tutorat en ThÚorie 
+des Langages\npour les Útudiants d\'ESPRIT, ce qui m\'a permis de dÚvelopper mes\ncompÚtences pÚdagogiques et 
+d\'approfondir mes connaissances dans\nce domaine. CapacitÚ prouvÚe Ó apprendre rapidement de 
+nouvelles\ntechnologies et Ó m\'adapter Ó de nouveaux environnements.\nExpÚrience\nIPACT 
+Consult\nStagiaire-DÚveloppeur web\nJuin 2024 - Ao¹t2024\nAriana, Tunisia\nDÚveloppement d\'une application web 
+multi-modules utilisant Spring,\nAngular et MongoDB(Gestion des crises et des incidents ).\nWICO Information 
+Technologies\nStagiaire-DÚveloppeur web\nJuillet 2023-Septembre 2023\nAriana, Tunisia\nDÚveloppement d\'une 
+application web monolithique utilisant Symfony\net MySQL(Gestion des programmes de formation en journalisme ) 
+.\nTSB (Tunisian Saudi Bank )\nStagiaire\nAo¹t 2021-Septembre 2021\nAriana, Tunisia\nGestion des CrÚdits du Fonds 
+Social\nEducation\nEcole supÚrieure privÚe d\'ingÚnierie et de\ntechnologie (ESPRIT)\nTWIN ((Technologies Web et 
+Internet)\nSeptembre 2020 - PrÚsent\nIngÚnierie Informatique\nLycÚe Ennaser 2\nBac maths\nSeptembre 2017 - Ao¹t 
+2020\nEnseignement secondaire\n\n--- Page 2 ---\nLangues\nFranþais\nCompÚtence professionnelle\nAnglais\nCompÚtence 
+professionnelle\nEspagnol\nNotions\nArabe\nBilingue ou langue natale\nIntÚrÛts\nAncien joueur de football 
+Ó\nl\'EspÚrance Sportive de Tunis\n(2009-2015)\nPratique actuelle du sport (fitness)\nAmateur de jeux vidÚo 
+(FIFA,\nFortnite, Counter-Strike)\nPassionnÚ par le Football et le\nTennis\nProjets\nApplication de Quiz 
+Intelligent Septembre 2024-Novembre 2024\n\ue2e2https://github.com/Daghnouj/DjangoProject\nLa crÚation d\'une 
+application web de quiz intelligent avec Django\nimplique plusieurs modules interdÚpendants pour gÚnÚrer et gÚrer 
+du\ncontenu pÚdagogique, des questions de quiz, la correction automatique,\nles recommandations personnalisÚes, et 
+un chatbot pour l\'interaction\nutilisateur\nApplication de Gestion Ressources Humaines Juin 2024-Mai 
+2024\n\ue2e2https://github.com/attia12/PiProjectDeploy\nDÚveloppement d\'une application web de gestion RH, 
+construite avec\nNestJS, Angular, et MongoDB, centralise efficacement la gestion des\nemployÚs et des performances 
+grÔce Ó des API sÚcurisÚes, une interface\nrÚactive, et un stockage de donnÚes flexible.\nApplication de 
+redistribution des\naliments\nSeptembre 2024-Novembre 
+2024\n\ue2e2https://github.com/ademrejeb/Laravel-FoodRescue\nDÚveloppement d\'une application de redistribution 
+alimentaire avec\nLaravel qui gÞre les donateurs, bÚnÚficiaires, stocks, collectes,\nlivraisons, et partenariats, 
+avec des notifications et recommandations\npour optimiser lÆefficacitÚ des opÚrations.\nApplication de Gestion de 
+Profiles Septembre 2024 -Octobre 2024\n\ue2e2https://github.com/ghazi300/NextJsUserApplication\nDÚveloppement 
+d\'une application web Next.js permet de crÚer et\nauthentifier des utilisateurs via OAuth2, leur offrant ensuite 
+la\npossibilitÚ de modifier leurs informations personnelles. Elle vÚrifie\nÚgalement que lÆadresse de chaque 
+utilisateur se situe dans un rayon de\n50 km de Paris grÔce Ó lÆAPI adresse.data.gouv.fr.\nMarketplace de Vente de 
+Voitures Janvier 2024-Mars 2024\n\ue2e2https://github.com/ghazi300/VenteVoitures\nDÚveloppement d\'une application 
+permettant de publier des annonces\nde vente de voitures, avec des options pour consulter les 
+vÚhicules\ndisponibles et rÚaliser des transactions en ligne. Elle facilite la mise en\nrelation entre acheteurs et 
+vendeurs pour un processus d\'achat\nsimplifiÚ et sÚcurisÚ'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 
+'reasoning_effort': None, 'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 
+'temperature': 1e-08}}
+2026-07-20 17:50:05,620 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:05,620 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,621 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:05,621 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,621 [DEBUG] send_request_body.complete
+2026-07-20 17:50:05,621 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,692 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:06 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'386'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'832'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'953'), (b'x-ratelimit-remaining-tokens', b'12000'), 
+(b'x-ratelimit-reset-requests', b'1h7m40.8s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', 
+b'req_01ky06ym98e0q8yrqtgyvp9egb'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e3768829adcac8-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:05,692 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:05,692 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,693 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:05,693 [DEBUG] response_closed.started
+2026-07-20 17:50:05,693 [DEBUG] response_closed.complete
+2026-07-20 17:50:05,693 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:06 GMT', 'content-type': 'application/json', 'content-length': 
+'386', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '832', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '953', 
+'x-ratelimit-remaining-tokens': '12000', 'x-ratelimit-reset-requests': '1h7m40.8s', 'x-ratelimit-reset-tokens': 
+'1ms', 'x-request-id': 'req_01ky06ym98e0q8yrqtgyvp9egb', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e3768829adcac8-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:05,693 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:05,693 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:05,693 [DEBUG] Re-raising status error
+2026-07-20 17:50:05,694 [ERROR] \u274c Erreur LLM pour CV tmpsh5puxyk.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99393, Requested 1569. Please try again in 13m51.168s. 
+Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:05,694 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 99393, Requested 1569. Please try again in 13m51.168s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:05,694 [INFO] \U0001f50d Traitement : tmpf5wwnl8f.pdf
+2026-07-20 17:50:05,695 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-e5beda5e-a17a-46bc-81aa-1b9817843a88', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nRezgui Mohamed Aziz\ndata analyst\narezgui1999@gmail.com +33758284094 6 Avenue 
+Gorges Pompidou, Puteaux\nSummary ╔tudiant en Master Data Management passionnÚ par la data et lÆintelligence 
+arti\ufb01cielle.\nMotivÚ, rigoureux et curieux, je souhaite mettre mes compÚtences en analyse de donnÚes,\nmachine 
+learning et dÚveloppement dÆapplications intelligentes au service dÆune\nentreprise innovante.\nPro\ufb01les 
+a\nMohamed aziz Rezgui\na\nrezgui99\nExperience Abshore Tunis,Tunisie\nStage de \ufb01n dÆÚtudes Mars 2025 - ao¹t 
+2025\nTechnologies : Python(FastAPI), Angular, Node.js+Express, PostgreSQL, Machine Learning,\nDescription 
+:\nDÚveloppement dÆune application de recrutement intelligente basÚe sur la GPEC pour\nidenti\ufb01er le pro\ufb01l 
+le plus adÚquat pour chaque poste..\nConception et mise en £uvre dÆun systÞme de recommandation de postes et 
+de\nformations pour les employÚs Ó partir de la matrice de compÚtences\nCollaboration avec lÆÚquipe technique pour 
+assurer la qualitÚ et la \ufb01abilitÚ des modules\ndÚveloppÚs.\nArabSoft Tunis, Tunisie\nStagiaire De juin 2024 Ó 
+ao¹t 2024\nTechnologies : Symfony, PHP, MySQL\nDescription :\nDÚveloppement dÆune application web de gestion 
+comptable pour le suivi et consultation\ndes comptes, factures et Úcritures comptable.\nMise en £uvre des bonnes 
+pratiques de dÚveloppement Symfony et intÚgration avec la\nbase de donnÚes MySQL.\nEducation Ecole supÚrieure 
+privÚe d\'ingÚnierie et de technologie\n(ESPRIT)\nIngÚnierie en Informatique\nDe sept. 2020 Ó juillet 
+2025\naivancity Master of Science Data Management\noctobre 2025 - Ó prÚsent\n\n--- Page 2 ---\nProjets RÚalisation 
+d\'une application de MarchÚ Financier en\ntemps rÚel\nDe sept. 2024 Ó janvier 2025\nTechnologies : Spring Boot, 
+Angular, PostgreSQL, Machine Learning (Python, Scikit-learn)\nDescription :\nDÚveloppement dÆune plateforme web 
+simulant une salle de marchÚ en temps rÚel, avec\naf\ufb01chage dynamique des cours, ordres et transactions.\nMise 
+en place dÆun backend robuste en Spring Boot et dÆune interface moderne en\nAngular.\nIntÚgration dÆun module de 
+dÚtection dÆanomalies basÚ sur des modÞles dÆIA pour\nidenti\ufb01er les comportements suspects ou 
+irrationnels.\nMicroBanque De janvier 2024 Ó mai 2024\nTechnologies : Spring boot, Angular, MySQL.\nDescription 
+:\nConception et dÚveloppement d\'une application web de banque virtuelle permettant une\ngestion sÚcurisÚe des 
+comptes des paiements et des transferts en ligne.\nIntÚgration de fonctionnalitÚs avancÚes telles que la gestion 
+des prÛts, la consultation\ndes soldes et lÆhistorique des transactions assurant une expÚrience utilisateur 
+\ufb02uide et\nintuitive.\nSkills Data Science & Analyse : Python (Pandas, NumPy, Scikit-learn), Power BI, 
+Analyse\nStatistique, Data Cleaning, Excel\nBases de DonnÚes : SQL, MySQL, PostgreSQL\nDÚveloppement & Frameworks : 
+Spring Boot, Angular, Node.js, Symfony, Java,\nHTML/CSS\nSoftskills: Apprentissage rapide, esprit dÆÚquipe, 
+curiositÚ intellectuelle, rÚsolution de\nproblÞmes.\nCentre d\'intÚrÛt voyage football musique\nLangues Franþais 
+Anglais'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 'reasoning_format': None, 
+'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:05,696 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:05,696 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,696 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:05,696 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,697 [DEBUG] send_request_body.complete
+2026-07-20 17:50:05,697 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,786 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:06 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'391'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'407'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'953'), (b'x-ratelimit-remaining-tokens', b'12000'), 
+(b'x-ratelimit-reset-requests', b'1h7m40.8s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', 
+b'req_01ky06ymbwfckr0xnbhg2hmrwb'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e37688bb10cac8-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:05,786 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:05,787 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,787 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:05,787 [DEBUG] response_closed.started
+2026-07-20 17:50:05,787 [DEBUG] response_closed.complete
+2026-07-20 17:50:05,787 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:06 GMT', 'content-type': 'application/json', 'content-length': 
+'391', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '407', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '953', 
+'x-ratelimit-remaining-tokens': '12000', 'x-ratelimit-reset-requests': '1h7m40.8s', 'x-ratelimit-reset-tokens': 
+'1ms', 'x-request-id': 'req_01ky06ymbwfckr0xnbhg2hmrwb', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e37688bb10cac8-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:05,787 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:05,787 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:05,787 [DEBUG] Re-raising status error
+2026-07-20 17:50:05,788 [ERROR] \u274c Erreur LLM pour CV tmpf5wwnl8f.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99393, Requested 1078. Please try again in 
+6m46.943999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 
+'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:05,788 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 99393, Requested 1078. Please try again in 6m46.943999999s. Need more tokens? Upgrade 
+to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:05,788 [INFO] \U0001f50d Traitement : tmpaxtvq9zz.pdf
+2026-07-20 17:50:05,789 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-d6f4f38d-abaa-4835-94b3-19558f489cc3', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nAZIZ REZGUI\n6 avenue Georges Pompidou, Puteaux\nTÚlÚphone : 07 58 28 40 
+94\nEmail : arezgui1999@gmail.com\nProfil\n╔tudiant en cycle ingÚnieur en informatique, sÚrieux, motivÚ et 
+polyvalent, Ó la recherche dÆun job Útudiant. Bonne\naisance relationnelle, sens du service client et capacitÚ 
+dÆadaptation rapide. Rythme scolaire : prÚsence Ó lÆÚcole\nune semaine par mois.\nExpÚrience 
+professionnelle\nEmployÚ polyvalent ù Monoprix, Tunisie (2022)\n\x7f Mise en rayon et rÚassort\n\x7f Gestion des 
+stocks et dates\n\x7f Participation aux inventaires\nLivreur ù Jumia, Tunisie (2024)\n\x7f Livraison de commandes 
+clients\n\x7f VÚrification des colis\n\x7f Optimisation des tournÚes\nH¶te de caisse ù Senior Tacos, Tunisie 
+(2024)\n\x7f Encaissement et gestion de caisse\n\x7f Prise de commandes\nAgent dÆaccueil (ÚvÚnementiel) ù ChloÚ 
+Prestige, France (2025)\n\x7f Accueil et orientation\n\x7f Gestion des flux\nAgent dÆinventaire ù Lidl Reuilly, 
+France (2025)\n\x7f Comptage des articles\n\x7f Utilisation de scanettes\n\x7f Contr¶le des Úcarts de 
+stock\nFormation\nCycle ingÚnieur en informatique ù Esprit (2020 û 2025)\nOutils\nWord, Excel, PowerPoint, Google 
+Workspace, outils CRM\nLangues\nFranþais : courant ù Anglais : intermÚdiaire\nInformations complÚmentaires\nPermis 
+B'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 'reasoning_format': None, 
+'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:05,790 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:05,790 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,790 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:05,790 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,791 [DEBUG] send_request_body.complete
+2026-07-20 17:50:05,791 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:05,871 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:06 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'381'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'31'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'953'), (b'x-ratelimit-remaining-tokens', b'12000'), 
+(b'x-ratelimit-reset-requests', b'1h7m40.8s'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', 
+b'req_01ky06ymehf4bawsbr4gzk90cv'), (b'via', b'1.1 google'), (b'cf-cache-status', b'DYNAMIC'), 
+(b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e376893c6bcac8-MRS'), (b'alt-svc', 
+b'h3=":443"; ma=86400')])
+2026-07-20 17:50:05,871 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:05,871 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:05,871 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:05,871 [DEBUG] response_closed.started
+2026-07-20 17:50:05,871 [DEBUG] response_closed.complete
+2026-07-20 17:50:05,871 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:06 GMT', 'content-type': 'application/json', 'content-length': 
+'381', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '31', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '953', 
+'x-ratelimit-remaining-tokens': '12000', 'x-ratelimit-reset-requests': '1h7m40.8s', 'x-ratelimit-reset-tokens': 
+'1ms', 'x-request-id': 'req_01ky06ymehf4bawsbr4gzk90cv', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 
+'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e376893c6bcac8-MRS', 'alt-svc': 'h3=":443"; 
+ma=86400'})
+2026-07-20 17:50:05,872 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:05,872 [DEBUG] Retrying due to status code 429
+2026-07-20 17:50:05,872 [DEBUG] 2 retries left
+2026-07-20 17:50:05,872 [INFO] Retrying request to /openai/v1/chat/completions in 31.000000 seconds
+2026-07-20 17:50:09,658 [DEBUG] {"message": "Server heartbeat succeeded", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"isWritablePrimary\": true, 
+\"topologyVersion\": {\"processId\": {\"$oid\": \"6a5e0d6f99a64bb43d97b060\"}}, \"maxBsonObjectSize\": 16777216, 
+\"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": 
+\"2026-07-20T16:50:09.658Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 250, \"maxWireVersion\": 27, 
+\"ok\": 1.0}"}
+2026-07-20 17:50:09,658 [DEBUG] {"message": "Server heartbeat started", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true}
+2026-07-20 17:50:19,658 [DEBUG] {"message": "Server heartbeat succeeded", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true, "durationMS": 10000.0, "reply": "{\"isWritablePrimary\": true, 
+\"topologyVersion\": {\"processId\": {\"$oid\": \"6a5e0d6f99a64bb43d97b060\"}}, \"maxBsonObjectSize\": 16777216, 
+\"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": 
+\"2026-07-20T16:50:19.658Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 250, \"maxWireVersion\": 27, 
+\"ok\": 1.0}"}
+2026-07-20 17:50:19,658 [DEBUG] {"message": "Server heartbeat started", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true}
+2026-07-20 17:50:29,660 [DEBUG] {"message": "Server heartbeat succeeded", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true, "durationMS": 10015.999999999622, "reply": "{\"isWritablePrimary\": true, 
+\"topologyVersion\": {\"processId\": {\"$oid\": \"6a5e0d6f99a64bb43d97b060\"}}, \"maxBsonObjectSize\": 16777216, 
+\"maxMessageSizeBytes\": 48000000, \"maxWriteBatchSize\": 100000, \"localTime\": {\"$date\": 
+\"2026-07-20T16:50:29.660Z\"}, \"logicalSessionTimeoutMinutes\": 30, \"connectionId\": 250, \"maxWireVersion\": 27, 
+\"ok\": 1.0}"}
+2026-07-20 17:50:29,660 [DEBUG] {"message": "Server heartbeat started", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "driverConnectionId": 1, "serverConnectionId": 250, "serverHost": "localhost", 
+"serverPort": 27017, "awaited": true}
+2026-07-20 17:50:36,884 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-d6f4f38d-abaa-4835-94b3-19558f489cc3', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nAZIZ REZGUI\n6 avenue Georges Pompidou, Puteaux\nTÚlÚphone : 07 58 28 40 
+94\nEmail : arezgui1999@gmail.com\nProfil\n╔tudiant en cycle ingÚnieur en informatique, sÚrieux, motivÚ et 
+polyvalent, Ó la recherche dÆun job Útudiant. Bonne\naisance relationnelle, sens du service client et capacitÚ 
+dÆadaptation rapide. Rythme scolaire : prÚsence Ó lÆÚcole\nune semaine par mois.\nExpÚrience 
+professionnelle\nEmployÚ polyvalent ù Monoprix, Tunisie (2022)\n\x7f Mise en rayon et rÚassort\n\x7f Gestion des 
+stocks et dates\n\x7f Participation aux inventaires\nLivreur ù Jumia, Tunisie (2024)\n\x7f Livraison de commandes 
+clients\n\x7f VÚrification des colis\n\x7f Optimisation des tournÚes\nH¶te de caisse ù Senior Tacos, Tunisie 
+(2024)\n\x7f Encaissement et gestion de caisse\n\x7f Prise de commandes\nAgent dÆaccueil (ÚvÚnementiel) ù ChloÚ 
+Prestige, France (2025)\n\x7f Accueil et orientation\n\x7f Gestion des flux\nAgent dÆinventaire ù Lidl Reuilly, 
+France (2025)\n\x7f Comptage des articles\n\x7f Utilisation de scanettes\n\x7f Contr¶le des Úcarts de 
+stock\nFormation\nCycle ingÚnieur en informatique ù Esprit (2020 û 2025)\nOutils\nWord, Excel, PowerPoint, Google 
+Workspace, outils CRM\nLangues\nFranþais : courant ù Anglais : intermÚdiaire\nInformations complÚmentaires\nPermis 
+B'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 'reasoning_format': None, 
+'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:36,886 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:36,886 [DEBUG] close.started
+2026-07-20 17:50:36,887 [DEBUG] close.complete
+2026-07-20 17:50:36,887 [DEBUG] connect_tcp.started host='api.groq.com' port=443 local_address=None timeout=None 
+socket_options=None
+2026-07-20 17:50:36,936 [DEBUG] connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 
+0x000001BE90F28130>
+2026-07-20 17:50:36,936 [DEBUG] start_tls.started ssl_context=<ssl.SSLContext object at 0x000001BE907AF3C0> 
+server_hostname='api.groq.com' timeout=None
+2026-07-20 17:50:36,997 [DEBUG] start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 
+0x000001BE90ED3C70>
+2026-07-20 17:50:36,997 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:36,997 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:36,998 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:36,998 [DEBUG] send_request_body.complete
+2026-07-20 17:50:36,998 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,157 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', 
+b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), 
+(b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, no-cache, must-revalidate'), 
+(b'Server', b'cloudflare'), (b'vary', b'Origin'), (b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', 
+b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), (b'x-ratelimit-remaining-requests', b'952'), 
+(b'x-ratelimit-remaining-tokens', b'11357'), (b'x-ratelimit-reset-requests', b'1h9m7.2s'), 
+(b'x-ratelimit-reset-tokens', b'3.215s'), (b'x-request-id', b'req_01ky06zjxtfpq9qa0tncpb4z3e'), (b'via', b'1.1 
+google'), (b'cf-cache-status', b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), 
+(b'Content-Encoding', b'gzip'), (b'CF-RAY', b'a1e3774c49a3e6f0-MRS'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,158 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-20 17:50:38,158 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,158 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,158 [DEBUG] response_closed.started
+2026-07-20 17:50:38,158 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,159 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "200 OK" 
+Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'transfer-encoding': 
+'chunked', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 'x-ratelimit-limit-requests': '1000', 
+'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 'x-ratelimit-remaining-tokens': 
+'11357', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': '3.215s', 'x-request-id': 
+'req_01ky06zjxtfpq9qa0tncpb4z3e', 'via': '1.1 google', 'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 
+'max-age=15552000', 'content-encoding': 'gzip', 'cf-ray': 'a1e3774c49a3e6f0-MRS', 'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,173 [DEBUG] \U0001f50d RÚponse LLM brute : {"annees_experience_total": 3, "niveau_seniorite": 
+"junior", "langue_cv": "fr", "competences_techniques": ["Word", "Excel", "PowerPoint", "Google Workspace", "outils 
+CRM"], "competences_soft": ["aisance relationnelle", "sens du service client", "capacitÚ dÆadaptation rapide"], 
+"langues_parles": ["Fr
+2026-07-20 17:50:38,173 [ERROR] \u274c Erreur LLM pour CV tmpaxtvq9zz.pdf : 1 validation error for CVStructure
+localisation
+  Input should be a valid dictionary or instance of LocalisationCV [type=model_type, input_value='France', 
+input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+2026-07-20 17:50:38,176 [ERROR] Traceback (most recent call last):
+  File "<string>", line 288, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\pydantic\main.py", line 253, in 
+__init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+pydantic_core._pydantic_core.ValidationError: 1 validation error for CVStructure
+localisation
+  Input should be a valid dictionary or instance of LocalisationCV [type=model_type, input_value='France', 
+input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/model_type
+
+2026-07-20 17:50:38,177 [INFO] \U0001f50d Traitement : tmpg0ivmzae.pdf
+2026-07-20 17:50:38,177 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-811f1fd1-1751-4696-b0e2-37f503aac878', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nBen Ali Oussema\n77 avenue FÚlix Faure, 92000 Nanterre\nTÚlÚphone : 07 46 57 45 
+73\nEmail : oussema.benali21@gmail.com\nProfil\n╔tudiant en data, sÚrieux et motivÚ, Ó la recherche dÆun job 
+Útudiant. ExpÚrience en restauration, grande distribution\net inventaire. Sens du service client, rigoureux et bon 
+esprit dÆÚquipe.\nRythme scolaire : prÚsence Ó lÆÚcole une semaine par mois.\nExpÚrience professionnelle\nEmployÚ 
+polyvalentù Monoprix, Tunisie2022\nù Mise en rayon et rÚassort\nù Gestion des stocks et dates\nù Participation aux 
+inventaires\nLivreurù Jumia, Tunisie 2024\nù Livraison de commandes clients\nù VÚrification des colis\nù 
+Optimisation des tournÚes\nH¶te de caisseù Senior Tacos, Tunisie2024\nù Encaissement et gestion de caisse\nù Prise 
+de commandes\nAgent dÆaccueil (ÚvÚnementiel)ù ChloÚ Prestige, France2025\nù Accueil et orientation\nù Gestion des 
+flux\nAgent dÆinventaireù Lidl Reuilly, France2025\nù Comptage des articles\nù Utilisation de scanettes\nù Contr¶le 
+des Úcarts de stock\nFormation\nMaster Data Managementù Aivancity2025û2026\nMaster Business Analyticsù Esprit 
+School of Business2023û2025\nLicence Business Computingù Esprit School of Business2019û2022\nOutils\nWord, Excel, 
+PowerPoint, Google Workspace, outils CRM\nLangues\nFranþais : courant ù Anglais : intermÚdiaire\nInformations 
+complÚmentaires\nPermis B (8 ans)'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 
+'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:38,178 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,178 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,179 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,179 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,179 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,179 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,252 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'385'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'581'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11134'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'4.33s'), (b'x-request-id', 
+b'req_01ky06zm2pfq99f50erssf0tvt'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e37753abfde6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,252 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,252 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,254 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,254 [DEBUG] response_closed.started
+2026-07-20 17:50:38,254 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,254 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'385', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '581', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11134', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'4.33s', 'x-request-id': 'req_01ky06zm2pfq99f50erssf0tvt', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e37753abfde6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,254 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,254 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,254 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,255 [ERROR] \u274c Erreur LLM pour CV tmpg0ivmzae.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 672. Please try again in 9m40.608s. 
+Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,255 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 672. Please try again in 9m40.608s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,255 [INFO] \U0001f50d Traitement : tmp_wvowfs1.pdf
+2026-07-20 17:50:38,256 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-dcbc6848-b095-4aab-84c3-c6b19bc6042f', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\n--- Page 1 ---\nAZIZ REZGUI \n6 avenue Georges Pompidou, Puteaux \nTÚlÚphone : 07 58 28 40 94 
+\nEmail : arezgui1999@gmail.com \n \nProfil \n╔tudiant en cycle ingÚnieur en informatique, sÚrieux, motivÚ et 
+polyvalent, Ó la recherche dÆun job Útudiant. Bonne \naisance relationnelle, sens du service client et capacitÚ 
+dÆadaptation rapide. Rythme scolaire : prÚsence Ó lÆÚcole \nune semaine par mois. \nExpÚrience professionnelle 
+\nEmployÚ polyvalent ù Monoprix, Tunisie (2022) \nò Mise en rayon et rÚassort \nò Gestion des stocks et dates \nò 
+Participation aux inventaires \n \nLivreur ù Jumia, Tunisie (2024) \nò Livraison de commandes clients \nò 
+VÚrification des colis \nò Optimisation des tournÚes \n \nH¶te de caisse ù Senior Tacos, Tunisie (2024) \nò 
+Encaissement et gestion de caisse \nò Prise de commandes \n \nAgent dÆaccueil (ÚvÚnementiel) ù ChloÚ Prestige, 
+France (2025) \nò Accueil et orientation \nò Gestion des flux \n \nAgent dÆinventaire ù Lidl Reuilly, France (2025) 
+\nò Comptage des articles \nò Utilisation de scanettes \nò Contr¶le des Úcarts de stock \n \nFormation \nCycle 
+ingÚnieur en informatique ù Esprit (2020 û 2025) \nMSC Data Management ù Aivancity (2025 û 2026)  \n \nOutils 
+\nWord, Excel, PowerPoint, Google Workspace, outils CRM \nLangues \nFranþais : courant ù Anglais : intermÚdiaire 
+\nInformations complÚmentaires \nPermis B'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 
+'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:38,256 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,256 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,257 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,257 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,257 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,257 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,331 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'385'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'578'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11148'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'4.26s'), (b'x-request-id', 
+b'req_01ky06zm4xfq9vwmfphwswpbp0'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e377541cf4e6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,331 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,331 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,332 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,332 [DEBUG] response_closed.started
+2026-07-20 17:50:38,332 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,332 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'385', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '578', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11148', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'4.26s', 'x-request-id': 'req_01ky06zm4xfq9vwmfphwswpbp0', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e377541cf4e6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,332 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,332 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,332 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,333 [ERROR] \u274c Erreur LLM pour CV tmp_wvowfs1.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 668. Please try again in 9m37.152s. 
+Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,334 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 668. Please try again in 9m37.152s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,334 [INFO] \U0001f50d Traitement : tmpr2rgwtsf.pdf
+2026-07-20 17:50:38,335 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-0767750a-1902-42fb-aeba-3047233a3298', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\nSummary\n\nSkills\n\nLangues\n\nPro\ufb01les\n\nRezgui Mohamed Aziz Data 
+Analyst\n\narezgui1999@gmail.com\n\n+33758284094\n\n6 Avenue Georges Pompidou, Puteaux\n\n╔tudiant en MSc Data 
+Management, je me spÚcialise dans la crÚation de valeur Ó partir de donnÚes complexes pour en faire de vÚritables 
+leviers de dÚcision stratÚgique. Ayant une double expertise en ingÚnierie informatique et en analyse statistique, 
+je ma¯trise l\'intÚgralitÚ du cycle de vie de la donnÚe de l\'extraction par SQL au nettoyage et Ó l\'exploration 
+rigoureuse avec Python , jusqu\'Ó la visualisation des d\'indicateurs de performance Ó travers Power BI. Mon 
+objectif est d\'accompagner une Úquipe MÚtier Ó une meilleure prise de dÚcision grÔce Ó une approche mÛlant analyse 
+prÚdictive et reporting\n\nintelligent.\n\nData Science & Analyse : Python (Pandas, NumPy, Scikit-learn), Power BI, 
+Analyse\n\nStatistique, Data Cleaning, Excel\n\nBases de DonnÚes : SQL, MySQL, PostgreSQL\n\nDÚveloppement & 
+Frameworks : Spring Boot, Angular, Node.js, Symfony, Java,\n\nHTML/CSS\n\nSoftskills: Apprentissage rapide, esprit 
+dÆÚquipe, curiositÚ intellectuelle, rÚsolution 
+de\n\nproblÞmes.\n\nFranþais\n\nAnglais\n\nBilingue\n\nProfessionnel\n\nlinkedin Mohamed aziz Rezgui\n\ngithub 
+rezgui99\n\nExperience\n\nEducation\n\nProjets\n\nAbshore Stage de \ufb01n dÆÚtudes Abshore | Stagiaire Data 
+Analyst (Stage de \ufb01n d\'Útudes)\n\nTunis,Tunisie Mars 2025 - ao¹t 2025\n\nAnalyse prÚdictive et scoring de 
+pro\ufb01ls : Conception d\'un moteur de recommandation basÚ sur l\'analyse de donnÚes RH (GPEC) pour 
+identi\ufb01er et classer les pro\ufb01ls les plus adÚquats pour chaque poste.\n\nModÚlisation et Gap Analysis : 
+CrÚation de matrices de compÚtences dynamiques pour identi\ufb01er les Úcarts de performance et optimiser le 
+matching entre les candidats et les besoins mÚtier de l\'entreprise.\n\nEnvironnement : Python | FastAPI | 
+PostgreSQL | Machine Learning | Scikit-learn | Angular\n\nArabSoft Stagiaire ArabSoft | Stagiaire Data & 
+DÚveloppement\n\nTunis, Tunisie De juin 2024 Ó ao¹t 2024\n\nModÚlisation et optimisation de base de donnÚes : 
+Conception d\'une base de donnÚes MySQL permettant d\'assurer l\'intÚgritÚ et la traþabilitÚ des \ufb02ux 
+comptables (comptes, factures, Úcritures).\n\nFiabilisation du reporting \ufb01nancier : CrÚation d\'une interface 
+Web permettant\n\nl\'automatisation des processus de saisie pour rÚduire les erreurs humaines et garantir la 
+\ufb01abilitÚ de l\'historique transactionnel.\n\nEnvironnement : Symfony | PHP | MySQL | Gestion de bases de 
+donnÚes relationnelles.\n\nEcole supÚrieure privÚe d\'ingÚnierie et de technologie\n\nIngÚnierie en 
+Informatique\n\n(ESPRIT)\n\nDe sept. 2020 Ó juillet 2025\n\naivancity\n\nMaster of Science Data 
+Management\n\noctobre 2025 - Ó prÚsent\n\nRÚalisation d\'une application de MarchÚ Financier en\n\nDe sept. 2024 Ó 
+janvier 2025\n\ntemps rÚel\n\nSalle de MarchÚ | Analyse de \ufb02ux \ufb01nanciers et dÚtection 
+d\'anomalies\n\nProjet AcadÚmique\n\nTraitement de sÚries temporelles : Analyse et af\ufb01chage dynamique des 
+\ufb02ux \ufb01nanciers en temps rÚel pour le suivi des cours, des ordres et des transactions.\n\nIntelligence 
+Arti\ufb01cielle appliquÚe : ImplÚmentation de modÞles de Machine Learning pour identi\ufb01er des comportements de 
+marchÚ atypiques (anomalies).\n\nEnvironnement : Python | Scikit-learn | Spring Boot | PostgreSQL | 
+Angular.\n\nCentre d\'intÚrÛt\n\nMicroBanque MicroBanque | Analyse comportementale et sÚcurisation des 
+\ufb02ux\n\nDe janvier 2024 Ó mai 2024\n\nProjet AcadÚmique\n\nAnalyse de donnÚes bancaires : ╔tude de 
+l\'historique des transactions pour optimiser l\'expÚrience utilisateur et \ufb01abiliser les processus de dÚcision 
+liÚs aux prÛts.\n\nSÚcurisation des \ufb02ux transactionnels : Conception et dÚveloppement d\'un systÞme de gestion 
+des paiements et des transferts en ligne.\n\nVisualisation fonctionnelle : DÚveloppement d\'interfaces de 
+consultation permettant une lecture claire et intuitive des soldes et des historiques 
+\ufb01nanciers.\n\nEnvironnement : Spring Boot | Angular | MySQL | Analyse de donnÚes.\n\nAnalyse de Performance | 
+Vente en Gros de Jouets Miniatures\n\nnovembre 2025 - decembre 2025\n\nProjet Business Intelligence & Data 
+Analytics\n\nPilotage international : Analyse des \ufb02ux de vente pour une entreprise spÚcialisÚe en maquettes et 
+modÞles de jouets rÚduits, rÚpartie sur 7 bureaux mondiaux.\n\nDashboarding 360░ : Conception dÆun outil dÆaide Ó 
+la dÚcision sous Power BI centralisant les indicateurs clÚs (KPIs) des p¶les Ventes, Finances, Logistique et 
+RH.\n\nAnalyse de saisonnalitÚ : CrÚation de mesures calculÚes (DAX) pour le suivi de\n\nl\'Úvolution du chiffre 
+d\'affaires (N-1, M-1) et l\'identi\ufb01cation des tendances de marchÚ\n\npar gamme de produits.\n\nOptimisation 
+logistique et RH : ImplÚmentation d\'un indicateur de prÚvision de rupture\n\nde stock et analyse de la 
+productivitÚ des 23 collaborateurs pour formuler des\n\nrecommandations sur la rÚpartition gÚographique des 
+stocks\n\nOptimisation stratÚgique : Mise en place d\'un indicateur de prÚvision de rupture de\n\nstock et audit de 
+la qualitÚ des donnÚes (RGPD et \ufb01abilitÚ des adresses mails).\n\nEnvironnement : Power BI | MySQL | DAX | Data 
+Storytelling | Business Intellig'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 
+'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:38,336 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,336 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,336 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,336 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,338 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,338 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,412 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'387'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'1425'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11166'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'4.17s'), (b'x-request-id', 
+b'req_01ky06zm7mfq9sfbsmeksaj7da'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e37754ae2fe6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,412 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,412 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,412 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,412 [DEBUG] response_closed.started
+2026-07-20 17:50:38,412 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,412 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'387', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '1425', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11166', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'4.17s', 'x-request-id': 'req_01ky06zm7mfq9sfbsmeksaj7da', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e37754ae2fe6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,414 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,414 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,414 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,414 [ERROR] \u274c Erreur LLM pour CV tmpr2rgwtsf.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 1649. Please try again in 
+23m44.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 
+'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,414 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 1649. Please try again in 23m44.736s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,414 [INFO] \U0001f50d Traitement : tmp6p8xj64m.pdf
+2026-07-20 17:50:38,415 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-a790cae9-3d54-4ae9-8d20-17db1655558c', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\nData Analyst Mohamed Aziz Rezgui\n\narezgui1999@gmail.com\n\n+33758284094\n\n6 Avenue Georges 
+Pompidou, Puteaux,92800\n\nPrÚsentation\n\n╔tudiant en MSc Data Management, spÚcialisÚ dans la valorisation de 
+donnÚes pour soutenir la dÚcision stratÚgique. DotÚ d\'une double compÚtence en ingÚnierie informatique et 
+statistiques, mon pro\ufb01l couvre lÆintÚgralitÚ du cycle de la donnÚe : de l\'extraction SQL au traitement 
+Python, jusqu\'Ó la visualisation. PrÛt Ó transformer ces \ufb02ux en leviers de performance pour les Úquipes 
+mÚtiers via l\'analyse prÚdictive et le reporting intelligent.\n\nExpÚriences\n\nAbshore Stage de \ufb01n 
+dÆÚtudes\n\nTunis,Tunisie Mars 2025 - ao¹t 2025\n\nAbshore | Stagiaire Data Analyst (Stage de \ufb01n 
+d\'Útudes)\n\nAnalyse prÚdictive et scoring de pro\ufb01ls : Conception d\'un moteur de recommandation\n\nbasÚ sur 
+l\'analyse de donnÚes RH (GPEC) pour identi\ufb01er et classer les pro\ufb01ls les plus\n\nadÚquats pour chaque 
+poste.\n\nModÚlisation et Gap Analysis : CrÚation de matrices de compÚtences dynamiques pour\n\nidenti\ufb01er les 
+Úcarts de performance et optimiser le matching entre les candidats et les\n\nbesoins mÚtier de 
+l\'entreprise.\n\nEnvironnement : Python | FastAPI | PostgreSQL | Machine Learning | Scikit-learn 
+|\n\nAngular\n\nArabSoft\n\nTunis, Tunisie\n\nStagiaire\n\nDe juin 2024 Ó ao¹t 2024\n\nArabSoft | Stagiaire Data & 
+DÚveloppement\n\nModÚlisation et optimisation de base de donnÚes : Conception d\'une base de donnÚes\n\nMySQL 
+permettant d\'assurer l\'intÚgritÚ et la traþabilitÚ des \ufb02ux comptables (comptes, factures, 
+Úcritures).\n\nFiabilisation du reporting \ufb01nancier : CrÚation d\'une interface Web permettant 
+l\'automatisation des processus de saisie pour rÚduire les erreurs humaines et garantir la \ufb01abilitÚ de 
+l\'historique transactionnel.\n\nEnvironnement : Symfony | PHP | MySQL | Gestion de bases de donnÚes 
+relationnelles.\n\nProjets\n\nSalle de MarchÚ | Analyse de \ufb02ux \ufb01nanciers et dÚtection 
+d\'anomalies\n\nTraitement de sÚries temporelles : Analyse et af\ufb01chage dynamique des \ufb02ux 
+\ufb01nanciers\n\nen temps rÚel pour le suivi des cours, des ordres et des transactions.\n\nIntelligence 
+Arti\ufb01cielle appliquÚe : ImplÚmentation de modÞles de Machine Learning\n\npour identi\ufb01er des comportements 
+de marchÚ atypiques (anomalies).\n\nEnvironnement : Python | Scikit-learn | Spring Boot | PostgreSQL | 
+Angular.\n\nEducation\n\nCompÚtences\n\nLangues\n\nCentre d\'intÚrÛt\n\nMicroBanque | Analyse comportementale et 
+sÚcurisation des \ufb02ux\n\nAnalyse de donnÚes bancaires : ╔tude de l\'historique des transactions pour optimiser 
+l\'expÚrience utilisateur et \ufb01abiliser les processus de dÚcision liÚs aux prÛts.\n\nVisualisation 
+fonctionnelle : DÚveloppement d\'interfaces de consultation permettant une lecture claire et intuitive des soldes 
+et des historiques \ufb01nanciers.\n\nEnvironnement : Spring Boot | Angular | MySQL | Analyse de 
+donnÚes.\n\nAnalyse de Performance | Vente en Gros de Jouets Miniatures\n\nPilotage international : Analyse des 
+\ufb02ux de vente pour une entreprise spÚcialisÚe en\n\nmaquettes et modÞles de jouets rÚduits, rÚpartie sur 7 
+bureaux mondiaux.\n\nDashboarding 360░ : Conception dÆun outil dÆaide Ó la dÚcision sous Power BI centralisant les 
+indicateurs clÚs (KPIs) des p¶les Ventes, Finances, Logistique et RH.\n\nAnalyse de saisonnalitÚ : CrÚation de 
+mesures calculÚes (DAX) pour le suivi de l\'Úvolution du chiffre d\'affaires (N-1, M-1) et l\'identi\ufb01cation 
+des tendances de marchÚ par gamme de produits.\n\nOptimisation logistique et RH : ImplÚmentation d\'un indicateur 
+de prÚvision de rupture de stock et analyse de la productivitÚ des 23 collaborateurs pour formuler des 
+recommandations sur la rÚpartition gÚographique des stocks.\n\nOptimisation stratÚgique : Mise en place d\'un 
+indicateur de prÚvision de rupture de\n\nstock et audit de la qualitÚ des donnÚes (RGPD et \ufb01abilitÚ des 
+adresses mails).\n\nEnvironnement : Power BI | MySQL | DAX | Data Storytelling | Business Intelligence.\n\nEcole 
+supÚrieure privÚe d\'ingÚnierie et de technologie\n\nIngÚnierie en Informatique\n\n(ESPRIT)\n\nDe sept. 2020 Ó 
+juillet 2025\n\nAivancity\n\nMaster of Science Data Management\n\nParis ò octobre 2025 - Ó prÚsent\n\nOutils data : 
+Python (Pandas, NumPy, Scikit-learn), Power BI, Excel\n\nBases de DonnÚes : SQL\n\nDÚveloppement & Frameworks : 
+Spring Boot, Angular, Node.js, Symfony, Java, HTML/CSS\n\nSoftskills: Apprentissage rapide, esprit dÆÚquipe, 
+curiositÚ intellectuelle, rÚsolution de 
+problÞmes.\n\nFranþais\n\nAnglais\n\nBilingue\n\nProfessionnel\n\nvoyage\n\nfootball\n\nmusique'}], 'model': 
+'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 'reasoning_format': None, 'service_tier': 'on_demand', 
+'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:38,416 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,416 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,416 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,416 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,417 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,417 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,490 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'383'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'1296'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11182'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'4.09s'), (b'x-request-id', 
+b'req_01ky06zma4ekha9y3nmnqyz2sf'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e377552f52e6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,491 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,491 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,491 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,491 [DEBUG] response_closed.started
+2026-07-20 17:50:38,491 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,491 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'383', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '1296', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11182', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'4.09s', 'x-request-id': 'req_01ky06zma4ekha9y3nmnqyz2sf', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e377552f52e6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,491 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,492 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,492 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,492 [ERROR] \u274c Erreur LLM pour CV tmp6p8xj64m.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 1500. Please try again in 21m36s. 
+Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 
+'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,493 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 1500. Please try again in 21m36s. Need more tokens? Upgrade to Dev 
+Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,493 [INFO] \U0001f50d Traitement : tmpv0xftflq.pdf
+2026-07-20 17:50:38,494 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-c10acb30-b3de-4ecf-820e-766e731803ba', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\nSkills\n\nData Science & Analyse : Python (Pandas, NumPy, Scikit-learn), Power BI, Analyse 
+Statistique, Data Cleaning, Excel\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nBases de DonnÚes : SQL, MySQL, 
+PostgreSQL\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nDÚveloppement & Frameworks : Spring Boot, Angular, Node.js, 
+Symfony, Java, C#, HTML/CSS\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nMÚthodologies : Agile/Scrum, Git, Jira, 
+Trello\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nApprentissage rapide, esprit dÆÚquipe, curiositÚ intellectuelle, 
+rÚsolution de problÞmes.\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nCentre d\'intÚrÛt\n\nvoyage\n\npassion pour le 
+football\n\nmusique\n\nLangues\n\nFranþais\n\n\ue1ec \ue1ec \ue1ec \ue1ec \ue1ec\n\nAnglais\n\n\ue1ec \ue1ec \ue1ec 
+\ue1ec \ue1ec\n\nRezgui Mohamed Aziz\n\n\ue316 6 Avenue Gorges Pompidou, Puteaux \ue3b8 +33758284094 \ue0ac 
+arezgui1999@gmail.com\n\nProfiles\n\nMohamed aziz Rezgui\n\nrezgui99\n\nSummary\n\n╔tudiant en Master Data 
+Management passionnÚ par la data et lÆintelligence artificielle. MotivÚ, rigoureux et curieux, je souhaite mettre 
+mes compÚtences en analyse de donnÚes, machine learning et dÚveloppement dÆapplications intelligentes au service 
+dÆune entreprise innovante.\n\nExperience\n\nAbshore Stage de fin dÆÚtudes û DÚveloppement dÆune application GPEC 
+basÚe sur le machine learning pour le matching poste-employÚ.\n\nMars 2025 - ao¹t 2025 Tunis,Tunisie\n\nConception 
+et dÚveloppement dÆune application intelligente de gestion des compÚtences.\n\nImplÚmentation de modÞles de machine 
+learning pour le matching poste-employÚ.\n\nArabSoft Stagiaire DÚveloppeur\n\nDe juin 2024 Ó ao¹t 2024 Tunis, 
+Tunisie\n\nTechnologies : Symfony, PHP, MySQL\n\nDescription :\n\nDÚveloppement dÆune application web de gestion 
+comptable pour le suivi et consultation des comptes, factures et Úcritures comptable.\n\nMise en £uvre des bonnes 
+pratiques de dÚveloppement Symfony et intÚgration avec la base de donnÚes MySQL.\n\nCollaboration avec lÆÚquipe 
+pour assurer la qualitÚ du code et la fiabilitÚ des fonctionnalitÚs.\n\nBIAT L\'initiation Ó T24, qui est un 
+systÞme bancaire central dÚveloppÚ par Temenos.\n\njuillet 2023 - Ao¹t 2023 Tunis, Tunisie\n\nInitiation Ó la 
+plateforme T24 et comprÚhension des processus bancaires.\n\nEducation\n\nEcole supÚrieure privÚe d\'ingÚnierie et 
+de technologie (ESPRIT)\n\nDe sept. 2020 Ó juillet 2025 IngÚnierie en Informatique\n\naivancity\n\noctobre 2025 - Ó 
+prÚsent Master of Science Data Management\n\nProjets\n\nRÚalisation d\'une application de MarchÚ\n\nDe sept. 2024 Ó 
+janvier 2025\n\nFinancier en temps rÚel\n\nTechnologies : Spring Boot, Angular, PostgreSQL, Machine 
+Learning\n\n(Python, Scikit-learn)\n\nDescription :\n\nDÚveloppement dÆune plateforme web simulant une salle de 
+marchÚ\n\nen temps rÚel, avec affichage dynamique des cours, ordres et transactions.\n\nMise en place dÆun backend 
+robuste en Spring Boot et dÆune interface\n\nmoderne en Angular.\n\nIntÚgration dÆun module de dÚtection 
+dÆanomalies basÚ sur des\n\nmodÞles dÆIA pour identifier les comportements suspects ou irrationnels.\n\nConception 
+UML et dÚfinition dÆune architecture modulaire garantissant la performance et la sÚcuritÚ du 
+systÞme.\n\nMicroBanque\n\nDe janvier 2024 Ó mai 2024\n\nTechnologies : Spring boot, Angular, MySQL.\n\nDescription 
+:\n\nConception et dÚveloppement d\'une application web de banque\n\nvirtuelle permettant une gestion sÚcurisÚe des 
+comptes des\n\npaiements et des transferts en ligne.\n\nIntÚgration de fonctionnalitÚs avancÚes telles que la 
+gestion des\n\nprÛts, la consultation des soldes et lÆhistorique des transactions\n\nassurant une expÚrience 
+utilisateur fluide et intuitive.'}], 'model': 'llama-3.3-70b-versatile', 'n': 1, 'reasoning_effort': None, 
+'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 'temperature': 1e-08}}
+2026-07-20 17:50:38,494 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,495 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,495 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,495 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,495 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,495 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,580 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'393'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'1072'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11198'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'4.01s'), (b'x-request-id', 
+b'req_01ky06zmcpfqbb4v14fqmjwjff'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e37755a8bfe6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,580 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,580 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,580 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,580 [DEBUG] response_closed.started
+2026-07-20 17:50:38,582 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,582 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'393', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '1072', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11198', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'4.01s', 'x-request-id': 'req_01ky06zmcpfqbb4v14fqmjwjff', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e37755a8bfe6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,582 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,582 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,582 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,582 [ERROR] \u274c Erreur LLM pour CV tmpv0xftflq.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 1240. Please try again in 
+17m51.359999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 
+'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,583 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 1240. Please try again in 17m51.359999999s. Need more tokens? 
+Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 
+'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,583 [INFO] \U0001f50d Traitement : tmpm270znv1.pdf
+2026-07-20 17:50:38,584 [DEBUG] Request options: {'method': 'post', 'url': '/openai/v1/chat/completions', 'files': 
+None, 'idempotency_key': 'stainless-python-retry-a7d0abbb-326f-4391-8492-cd37ef6e9cea', 'json_data': {'messages': 
+[{'role': 'user', 'content': 'You are an expert HR analyst. The CV may be in Arabic, French or English. Respond 
+ONLY with valid JSON, no markdown.\n\nFill this exact JSON schema (keep all keys):\n{"annees_experience_total": 
+null, "niveau_seniorite": null, "langue_cv": "fr", "competences_techniques": [], "competences_soft": [], 
+"langues_parles": [], "formations": [], "experiences": [], "dernier_poste": null, "dernier_secteur": null, 
+"type_contrat_souhaite": null, "salaire_souhaite_min": null, "salaire_souhaite_max": null, "localisation": null, 
+"diplome_max": null}\n\nRules:\n- niveau_seniorite: junior|confirme|senior|lead|null\n- diplome_max: 
+Bac+2|Bac+3|Bac+5|Doctorat|null\n- annee in formations: string like 2020\n- annees_experience_total: integer or 
+null\n\nCV TEXT:\nSummary\n\nCompÚtences\n\nLangues\n\nPro\ufb01les\n\nRezgui Mohamed Aziz Data 
+Analyst\n\narezgui1999@gmail.com\n\n+33758284094\n\n6 Avenue Georges Pompidou, Puteaux\n\n╔tudiant en MSc Data 
+Management, spÚcialisÚ dans la valorisation de donnÚes pour soutenir la dÚcision stratÚgique. DotÚ d\'une double 
+compÚtence en ingÚnierie informatique et statistiques, le pro\ufb01l couvre lÆintÚgralitÚ du cycle de la donnÚe : 
+de l\'extraction SQL au traitement Python, jusqu\'Ó la visualisation Power BI. PrÛt Ó transformer ces \ufb02ux en 
+leviers de performance pour les Úquipes mÚtiers via l\'analyse prÚdictive et le reporting intelligent\n\nData 
+Science & Analyse : Python (Pandas, NumPy, Scikit-learn), Power BI, Analyse\n\nStatistique, Data Cleaning, 
+Excel\n\nBases de DonnÚes : SQL, MySQL, PostgreSQL\n\nDÚveloppement & Frameworks : Spring Boot, Angular, Node.js, 
+Symfony, Java,\n\nHTML/CSS\n\nSoftskills: Apprentissage rapide, esprit dÆÚquipe, curiositÚ intellectuelle, 
+rÚsolution de\n\nproblÞmes.\n\nFranþais\n\nAnglais\n\nBilingue\n\nProfessionnel\n\nlinkedin Mohamed aziz 
+Rezgui\n\ngithub rezgui99\n\nExperience\n\nEducation\n\nProjets\n\nAbshore Stage de \ufb01n dÆÚtudes Abshore | 
+Stagiaire Data Analyst (Stage de \ufb01n d\'Útudes)\n\nTunis,Tunisie Mars 2025 - ao¹t 2025\n\nAnalyse prÚdictive et 
+scoring de pro\ufb01ls : Conception d\'un moteur de recommandation basÚ sur l\'analyse de donnÚes RH (GPEC) pour 
+identi\ufb01er et classer les pro\ufb01ls les plus adÚquats pour chaque poste.\n\nModÚlisation et Gap Analysis : 
+CrÚation de matrices de compÚtences dynamiques pour identi\ufb01er les Úcarts de performance et optimiser le 
+matching entre les candidats et les besoins mÚtier de l\'entreprise.\n\nEnvironnement : Python | FastAPI | 
+PostgreSQL | Machine Learning | Scikit-learn | Angular\n\nArabSoft Stagiaire ArabSoft | Stagiaire Data & 
+DÚveloppement\n\nTunis, Tunisie De juin 2024 Ó ao¹t 2024\n\nModÚlisation et optimisation de base de donnÚes : 
+Conception d\'une base de donnÚes MySQL permettant d\'assurer l\'intÚgritÚ et la traþabilitÚ des \ufb02ux 
+comptables (comptes, factures, Úcritures).\n\nFiabilisation du reporting \ufb01nancier : CrÚation d\'une interface 
+Web permettant\n\nl\'automatisation des processus de saisie pour rÚduire les erreurs humaines et garantir la 
+\ufb01abilitÚ de l\'historique transactionnel.\n\nEnvironnement : Symfony | PHP | MySQL | Gestion de bases de 
+donnÚes relationnelles.\n\nEcole supÚrieure privÚe d\'ingÚnierie et de technologie\n\nIngÚnierie en 
+Informatique\n\n(ESPRIT)\n\nDe sept. 2020 Ó juillet 2025\n\naivancity\n\nMaster of Science Data 
+Management\n\noctobre 2025 - Ó prÚsent\n\nRÚalisation d\'une application de MarchÚ Financier en\n\nDe sept. 2024 Ó 
+janvier 2025\n\ntemps rÚel\n\nSalle de MarchÚ | Analyse de \ufb02ux \ufb01nanciers et dÚtection 
+d\'anomalies\n\nProjet AcadÚmique\n\nTraitement de sÚries temporelles : Analyse et af\ufb01chage dynamique des 
+\ufb02ux \ufb01nanciers en temps rÚel pour le suivi des cours, des ordres et des transactions.\n\nIntelligence 
+Arti\ufb01cielle appliquÚe : ImplÚmentation de modÞles de Machine Learning pour identi\ufb01er des comportements de 
+marchÚ atypiques (anomalies).\n\nEnvironnement : Python | Scikit-learn | Spring Boot | PostgreSQL | 
+Angular.\n\nCentre d\'intÚrÛt\n\nMicroBanque MicroBanque | Analyse comportementale et sÚcurisation des 
+\ufb02ux\n\nDe janvier 2024 Ó mai 2024\n\nProjet AcadÚmique\n\nAnalyse de donnÚes bancaires : ╔tude de 
+l\'historique des transactions pour optimiser l\'expÚrience utilisateur et \ufb01abiliser les processus de dÚcision 
+liÚs aux prÛts.\n\nSÚcurisation des \ufb02ux transactionnels : Conception et dÚveloppement d\'un systÞme de gestion 
+des paiements et des transferts en ligne.\n\nVisualisation fonctionnelle : DÚveloppement d\'interfaces de 
+consultation permettant une lecture claire et intuitive des soldes et des historiques 
+\ufb01nanciers.\n\nEnvironnement : Spring Boot | Angular | MySQL | Analyse de donnÚes.\n\nAnalyse de Performance | 
+Vente en Gros de Jouets Miniatures\n\nnovembre 2025 - decembre 2025\n\nProjet Business Intelligence & Data 
+Analytics\n\nPilotage international : Analyse des \ufb02ux de vente pour une entreprise spÚcialisÚe en maquettes et 
+modÞles de jouets rÚduits, rÚpartie sur 7 bureaux mondiaux.\n\nDashboarding 360░ : Conception dÆun outil dÆaide Ó 
+la dÚcision sous Power BI centralisant les indicateurs clÚs (KPIs) des p¶les Ventes, Finances, Logistique et 
+RH.\n\nAnalyse de saisonnalitÚ : CrÚation de mesures calculÚes (DAX) pour le suivi de\n\nl\'Úvolution du chiffre 
+d\'affaires (N-1, M-1) et l\'identi\ufb01cation des tendances de marchÚ\n\npar gamme de produits.\n\nOptimisation 
+logistique et RH : ImplÚmentation d\'un indicateur de prÚvision de rupture\n\nde stock et analyse de la 
+productivitÚ des 23 collaborateurs pour formuler des\n\nrecommandations sur la rÚpartition gÚographique des 
+stocks\n\nOptimisation stratÚgique : Mise en place d\'un indicateur de prÚvision de rupture de\n\nstock et audit de 
+la qualitÚ des donnÚes (RGPD et \ufb01abilitÚ des adresses mails).\n\nEnvironnement : Power BI | MySQL | DAX | Data 
+Storytelling | Business Intelligence.\n\nvoyage\n\nfootball\n\nmusique'}], 'model': 'llama-3.3-70b-versatile', 'n': 
+1, 'reasoning_effort': None, 'reasoning_format': None, 'service_tier': 'on_demand', 'stop': None, 'stream': False, 
+'temperature': 1e-08}}
+2026-07-20 17:50:38,584 [DEBUG] Sending HTTP Request: POST https://api.groq.com/openai/v1/chat/completions
+2026-07-20 17:50:38,585 [DEBUG] send_request_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,585 [DEBUG] send_request_headers.complete
+2026-07-20 17:50:38,585 [DEBUG] send_request_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,585 [DEBUG] send_request_body.complete
+2026-07-20 17:50:38,585 [DEBUG] receive_response_headers.started request=<Request [b'POST']>
+2026-07-20 17:50:38,653 [DEBUG] receive_response_headers.complete return_value=(b'HTTP/1.1', 429, b'Too Many 
+Requests', [(b'Date', b'Mon, 20 Jul 2026 16:50:39 GMT'), (b'Content-Type', b'application/json'), 
+(b'Content-Length', b'387'), (b'Connection', b'keep-alive'), (b'Cache-Control', b'private, max-age=0, no-store, 
+no-cache, must-revalidate'), (b'retry-after', b'1405'), (b'Server', b'cloudflare'), (b'vary', b'Origin'), 
+(b'x-groq-region', b'fra'), (b'x-ratelimit-limit-requests', b'1000'), (b'x-ratelimit-limit-tokens', b'12000'), 
+(b'x-ratelimit-remaining-requests', b'952'), (b'x-ratelimit-remaining-tokens', b'11214'), 
+(b'x-ratelimit-reset-requests', b'1h9m7.2s'), (b'x-ratelimit-reset-tokens', b'3.93s'), (b'x-request-id', 
+b'req_01ky06zmf6ekkvk4jr7mnw3gga'), (b'x-should-retry', b'false'), (b'via', b'1.1 google'), (b'cf-cache-status', 
+b'DYNAMIC'), (b'Strict-Transport-Security', b'max-age=15552000'), (b'CF-RAY', b'a1e3775629d7e6f0-MRS'), 
+(b'alt-svc', b'h3=":443"; ma=86400')])
+2026-07-20 17:50:38,653 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too 
+Many Requests"
+2026-07-20 17:50:38,654 [DEBUG] receive_response_body.started request=<Request [b'POST']>
+2026-07-20 17:50:38,654 [DEBUG] receive_response_body.complete
+2026-07-20 17:50:38,654 [DEBUG] response_closed.started
+2026-07-20 17:50:38,654 [DEBUG] response_closed.complete
+2026-07-20 17:50:38,654 [DEBUG] HTTP Response: POST https://api.groq.com/openai/v1/chat/completions "429 Too Many 
+Requests" Headers({'date': 'Mon, 20 Jul 2026 16:50:39 GMT', 'content-type': 'application/json', 'content-length': 
+'387', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate', 
+'retry-after': '1405', 'server': 'cloudflare', 'vary': 'Origin', 'x-groq-region': 'fra', 
+'x-ratelimit-limit-requests': '1000', 'x-ratelimit-limit-tokens': '12000', 'x-ratelimit-remaining-requests': '952', 
+'x-ratelimit-remaining-tokens': '11214', 'x-ratelimit-reset-requests': '1h9m7.2s', 'x-ratelimit-reset-tokens': 
+'3.93s', 'x-request-id': 'req_01ky06zmf6ekkvk4jr7mnw3gga', 'x-should-retry': 'false', 'via': '1.1 google', 
+'cf-cache-status': 'DYNAMIC', 'strict-transport-security': 'max-age=15552000', 'cf-ray': 'a1e3775629d7e6f0-MRS', 
+'alt-svc': 'h3=":443"; ma=86400'})
+2026-07-20 17:50:38,654 [DEBUG] Encountered httpx.HTTPStatusError
+Traceback (most recent call last):
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1024, 
+in request
+    response.raise_for_status()
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\httpx\_models.py", line 829, in 
+raise_for_status
+    raise HTTPStatusError(message, request=request, response=self)
+httpx.HTTPStatusError: Client error '429 Too Many Requests' for url 
+'https://api.groq.com/openai/v1/chat/completions'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+2026-07-20 17:50:38,654 [DEBUG] Not retrying as header `x-should-retry` is set to `false`
+2026-07-20 17:50:38,654 [DEBUG] Re-raising status error
+2026-07-20 17:50:38,655 [ERROR] \u274c Erreur LLM pour CV tmpm270znv1.pdf : Error code: 429 - {'error': {'message': 
+'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service 
+tier `on_demand` on tokens per day (TPD): Limit 100000, Used 100000, Requested 1626. Please try again in 
+23m24.864s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 
+'tokens', 'code': 'rate_limit_exceeded'}}
+2026-07-20 17:50:38,655 [ERROR] Traceback (most recent call last):
+  File "<string>", line 160, in extraire
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 472, in invoke
+    self.generate_prompt(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1752, in generate_prompt
+    return self.generate(prompt_messages, stop=stop, callbacks=callbacks, **kwargs)
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1559, in generate
+    self._generate_with_cache(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_core\language_models\chat
+_models.py", line 1899, in _generate_with_cache
+    result = self._generate(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_groq\chat_models.py", 
+line 621, in _generate
+    response = self.client.create(messages=message_dicts, **params)
+  File 
+"C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\resources\chat\completions.py", line 
+461, in create
+    return self._post(
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1242, 
+in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\h_ref\AppData\Local\Programs\Python\Python310\lib\site-packages\groq\_base_client.py", line 1044, 
+in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model 
+`llama-3.3-70b-versatile` in organization `org_01kr77me61em7rb0x0pxqewxr6` service tier `on_demand` on tokens per 
+day (TPD): Limit 100000, Used 100000, Requested 1626. Please try again in 23m24.864s. Need more tokens? Upgrade to 
+Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+2026-07-20 17:50:38,655 [DEBUG] {"message": "Server selection started", "selector": 
+"PrimaryPreferred(tag_sets=None, max_staleness=-1, hedge=None)", "operation": "endSessions", "topologyDescription": 
+"<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: [<ServerDescription 
+('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}}
+2026-07-20 17:50:38,655 [DEBUG] {"message": "Server selection succeeded", "selector": 
+"PrimaryPreferred(tag_sets=None, max_staleness=-1, hedge=None)", "operation": "endSessions", "topologyDescription": 
+"<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: [<ServerDescription 
+('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:38,656 [DEBUG] {"message": "Connection checkout started", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:38,656 [DEBUG] {"message": "Connection checked out", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1, "durationMS": 
+0.0}
+2026-07-20 17:50:38,656 [DEBUG] {"message": "Command started", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"command": "{\"endSessions\": [{\"id\": {\"$binary\": {\"base64\": \"dCAw9Z3CQUiKaO3qXjum5g==\", \"subType\": 
+\"04\"}}}], \"$db\": \"admin\"}", "commandName": "endSessions", "databaseName": "admin", "requestId": 6334, 
+"operationId": 6334, "driverConnectionId": 1, "serverConnectionId": 252, "serverHost": "localhost", "serverPort": 
+27017}
+2026-07-20 17:50:38,656 [DEBUG] {"message": "Command succeeded", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"durationMS": 0.0, "reply": "{\"ok\": 1.0}", "commandName": "endSessions", "databaseName": "admin", "requestId": 
+6334, "operationId": 6334, "driverConnectionId": 1, "serverConnectionId": 252, "serverHost": "localhost", 
+"serverPort": 27017}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Connection checked in", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Stopped server monitoring", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Connection closed", "clientId": {"$oid": "6a5e51b73a119d655f2a5d52"}, 
+"serverHost": "localhost", "serverPort": 27017, "driverConnectionId": 1, "reason": "Connection pool was closed", 
+"error": "poolClosed"}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Connection pool closed", "clientId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "serverHost": "localhost", "serverPort": 27017}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Topology description changed", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}, "previousDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, 
+topology_type: Single, servers: [<ServerDescription ('localhost', 27017) server_type: Standalone, rtt: 0.0>]>", 
+"newDescription": "<TopologyDescription id: 6a5e51b73a119d655f2a5d52, topology_type: Single, servers: 
+[<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None>]>"}
+2026-07-20 17:50:38,657 [DEBUG] {"message": "Stopped topology monitoring", "topologyId": {"$oid": 
+"6a5e51b73a119d655f2a5d52"}}
+2026-07-20 17:50:38,657 [INFO] \U0001f3c1 Pipeline NER CV terminÚ ù SuccÞs: 0 | Erreurs: 10
+2026-07-20 17:50:39,066 [DEBUG] close.started
+2026-07-20 17:50:39,066 [DEBUG] close.complete

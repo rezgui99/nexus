@@ -1,0 +1,92 @@
+﻿============================================================
+  NEXUS EMPLOI -- Verification des donnees
+============================================================
+
+[MONGODB]
+----------------------------------------
+raw_offres : 102 total
+  - APEC (reelles)  : 102
+  - seed (fictives) : 0
+
+  Dernieres offres APEC reelles :
+    OK D├®veloppeur Backend Java - Expertise SQL & DevOps 
+       Entreprise : None
+       Desc (100c): 
+       Statut     : raw
+
+    OK Ing├®nieur.e d'exploitation applicatif - AppOpps F/
+       Entreprise : None
+       Desc (100c): 
+       Statut     : raw
+
+    OK Ing├®nieur DATA F/H
+       Entreprise : None
+       Desc (100c): 
+       Statut     : raw
+
+raw_cv : 12 CV
+  - tmpvwc1n_rf.pdf | 4349 chars | statut: raw
+    Extrait: Profiles
+
+Ghazi Bouzid
+
+ghazi300
+
+Skills
+
+Technologies Web
+
+Advanced
+
+HTML, CSS,
+  - tmpo46peq81.pdf | 2980 chars | statut: raw
+    Extrait: Skills
+
+Symfony4/JavaFx/Qt/Spring, Trello/GitHub.
+
+¯ç¼ ¯ç¼ ¯ç¼ ¯ç¼ ¯ç¼
+
+M├®thodologie agile
+  - tmpm270znv1.pdf | 4867 chars | statut: raw
+    Extrait: Summary
+
+Comp├®tences
+
+Langues
+
+Pro´¼üles
+
+Rezgui Mohamed Aziz Data Analyst
+
+arezgu
+
+[POSTGRESQL]
+----------------------------------------
+offres_structurees : 15 total
+  - reelles (NER)  : 0
+  - fictives (seed): 15
+  WARN  Aucune offre structuree reelle (NER pas encore lance)
+cv_structures : 3 CV
+
+[QDRANT]
+----------------------------------------
+  Erreur Qdrant : 4 validation errors for ParsingModel[InlineResponse2005] (for parse_as_type)
+obj.result.config.optimizer_config.max_optimization_threads
+  Input should be a valid integer [type=int_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/int_type
+obj.result.config.optimizer_config.prevent_unoptimized
+  Extra inputs are not permitted [type=extra_forbidden, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+obj.result.config.wal_config.wal_retain_closed
+  Extra inputs are not permitted [type=extra_forbidden, input_value=1, input_type=int]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+obj.result.update_queue
+  Extra inputs are not permitted [type=extra_forbidden, input_value={'length': 0}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+
+============================================================
+RESUME :
+  MongoDB offres APEC reelles : 102
+  MongoDB offres fictives     : 0
+  MongoDB CV                  : 12
+============================================================
